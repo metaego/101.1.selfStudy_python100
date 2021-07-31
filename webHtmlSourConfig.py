@@ -13,6 +13,8 @@ import requests
 url = "https://www.python.org/"
 resp = requests.get(url)
 
+# 웹 서버의 응답 객체는 headers, cookies, text 등 여러가지 속성을 갖는다. 
+# 그 중 text 속성을 지정하고 html이라는 변수에 담는다.
 html = resp.text
 
 print(html)
